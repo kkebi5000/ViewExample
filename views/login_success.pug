@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta(charset='utf8')
+    title 로그인 성공
+  body
+    h1 로그인 성공
+    div
+      // ejs에서 <%=%>라고 썼던것을 pug에서는 #{}이라고 쓴다.
+      p 사용자 아이디 : #{userid}
+    div 
+      p 사용자 이름 : #{username}
+    br
+    br
+    a(href = '/public/login.html') 돌아가기
+    // <% %> 라고 썼던것을 pug에서는 - 라고 쓴다.
+    // ex. - for(var i =0;i<1;i++){...}
